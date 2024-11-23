@@ -36,7 +36,7 @@
    <property name="geometry">
     <rect>
      <x>350</x>
-     <y>540</y>
+     <y>550</y>
      <width>211</width>
      <height>41</height>
     </rect>
@@ -173,6 +173,25 @@ border-radius:10pxt;
    </property>
    <property name="scaledContents">
     <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>560</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 700 12pt &quot;Segoe UI&quot;;
+background-color:rgb(255, 0, 0);
+color:rgb(255, 255, 255)</string>
+   </property>
+   <property name="text">
+    <string>Register</string>
    </property>
   </widget>
  </widget>
