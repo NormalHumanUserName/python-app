@@ -32,28 +32,12 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>550</y>
-     <width>211</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
-   </property>
-   <property name="text">
-    <string>Don't have an account?</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>300</x>
      <y>200</y>
-     <width>401</width>
+     <width>471</width>
      <height>91</height>
     </rect>
    </property>
@@ -61,7 +45,7 @@
     <string notr="true">font: 700 30pt &quot;Rockwell&quot;;</string>
    </property>
    <property name="text">
-    <string>Welcome back!</string>
+    <string>Create an account</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
@@ -137,8 +121,8 @@
   <widget class="QLineEdit" name="lineEdit_6">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>610</y>
+     <x>430</x>
+     <y>640</y>
      <width>161</width>
      <height>51</height>
     </rect>
@@ -150,7 +134,7 @@ border-radius:10pxt;
 </string>
    </property>
    <property name="text">
-    <string>Login</string>
+    <string>Sign Up</string>
    </property>
    <property name="placeholderText">
     <string/>
@@ -178,9 +162,9 @@ border-radius:10pxt;
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>560</y>
-     <width>101</width>
+     <x>400</x>
+     <y>700</y>
+     <width>241</width>
      <height>21</height>
     </rect>
    </property>
@@ -191,7 +175,7 @@ background-color:rgb(255, 0, 0);
 color:rgb(255, 255, 255)</string>
    </property>
    <property name="text">
-    <string>Register</string>
+    <string>Already have an account</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -227,6 +211,41 @@ color:rgb(255, 255, 255)</string>
    </property>
    <property name="text">
     <string>PitchPoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>520</y>
+     <width>221</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Confirm Password</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_7">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>570</y>
+     <width>281</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Please enter Password</string>
    </property>
   </widget>
  </widget>
