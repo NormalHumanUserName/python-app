@@ -27,7 +27,7 @@
      <string notr="true">background-color:rgb(0, 255, 0)</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label">
@@ -124,17 +124,91 @@
      </widget>
     </widget>
     <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>261</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(255, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>270</y>
+        <width>261</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(255, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>500</y>
+        <width>261</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(255, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>150</y>
+        <x>490</x>
+        <y>100</y>
         <width>63</width>
         <height>20</height>
        </rect>
       </property>
       <property name="text">
-       <string>jj</string>
+       <string>Tin tức 1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>320</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TIn tức 2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>540</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tin tức 2</string>
       </property>
      </widget>
     </widget>
