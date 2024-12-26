@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QMainWindow, QApplication, QLineEdit, QMessageBox, QPushButton
+from PyQt6.QtWidgets import QMainWindow, QApplication, QLineEdit, QMessageBox, QPushButton, QStackedWidget
 from PyQt6.QtGui import QIcon
 from PyQt6 import uic
 import sys
@@ -156,6 +156,21 @@ class Home(QMainWindow):
         super().__init__()
         uic.loadUi('ui/mainwindow.ui', self)
         self.user_id = user_id
+        
+        self.nav_home_btn = self.findChild(QPushButton,'nav_home_btn')
+        self.nav_account_btn = self.findChild(QPushButton,'nav_account_btn')
+        self.nav_new_btn = self.findChild(QPushButton,'nav_new_btn')
+        self.stackedWidget = self.findChild(QStackedWidget,'stackedWidget')
+        self.stackedWidget.setCurrentIndex(2)
+        
+        
+        self.nav_home_btn.clicked.connect(lambda: self.navigateScreen(2))
+        self.nav_account_btn.clicked.connect(lambda: self.navigateScreen(0))
+        self.nav_new_btn.clicked.connect(lambda: self.navigateScreen(1))
+
+    def navigateScreen(self, page:int):
+        self.stackedWidget.setCurrentIndex(page)
+
             
 if __name__=='__main__':
     app=QApplication(sys.argv)

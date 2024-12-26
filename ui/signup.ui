@@ -230,7 +230,7 @@ border-radius:15px</string>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../img/eye-solid.svg</normaloff>../img/eye-solid.svg</iconset>
+     <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_eye2">
@@ -247,7 +247,7 @@ border-radius:15px</string>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../img/eye-solid.svg</normaloff>../img/eye-solid.svg</iconset>
+     <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_login">
