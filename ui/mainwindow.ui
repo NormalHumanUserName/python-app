@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>0</y>
+      <y>10</y>
       <width>911</width>
       <height>731</height>
      </rect>
@@ -388,18 +388,19 @@
      <widget class="QLabel" name="label_40">
       <property name="geometry">
        <rect>
-        <x>330</x>
-        <y>140</y>
-        <width>641</width>
-        <height>41</height>
+        <x>360</x>
+        <y>120</y>
+        <width>531</width>
+        <height>61</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">overflow-wrap: break-word;</string>
       </property>
       <property name="text">
-       <string>Nguyễn Xuân Son được kỳ vọng sẽ tiếp tục có một màn trình diễn bùng nổ ở trận gặp Singapore.
-Hai sự thay đổi của HLV Kim Sang-sik so với trận đấu trước là Khuất Văn Khang và Đinh Thanh Bình.</string>
+       <string>Nguyễn Xuân Son được kỳ vọng sẽ tiếp tục có một màn trình diễn bùng nổ ở
+ trận gặp Singapore.Hai sự thay đổi của HLV Kim Sang-sik so với trận đấu trước
+ là Khuất Văn Khang và Đinh Thanh Bình.</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_41">
@@ -462,9 +463,9 @@ color:rgb(85, 255, 127)</string>
       <property name="geometry">
        <rect>
         <x>370</x>
-        <y>350</y>
-        <width>521</width>
-        <height>20</height>
+        <y>340</y>
+        <width>501</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="text">
@@ -476,14 +477,15 @@ Nếu bóng đi vào lưới, bàn thắng cũng không được công nhận v�
       <property name="geometry">
        <rect>
         <x>370</x>
-        <y>590</y>
-        <width>501</width>
-        <height>20</height>
+        <y>550</y>
+        <width>461</width>
+        <height>71</height>
        </rect>
       </property>
       <property name="text">
-       <string>Trọng tài bắt trận chung kết lượt về AFF Cup 2008, ông Abdul Malik, kể lại kỷ niệm về
- bàn thắng của tiền đạo Công Vinh trên sân Mỹ Đình từng khiến ông choáng ngợp.</string>
+       <string>Trọng tài bắt trận chung kết lượt về AFF Cup 2008, ông Abdul Malik, 
+kể lại kỷ niệm về bàn thắng của tiền đạo Công Vinh trên sân Mỹ Đình 
+từng khiến ông choáng ngợp.</string>
       </property>
      </widget>
     </widget>
@@ -979,7 +981,7 @@ color:rgb(85, 255, 127)</string>
      <x>0</x>
      <y>0</y>
      <width>1024</width>
-     <height>37</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
