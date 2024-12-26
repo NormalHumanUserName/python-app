@@ -53,7 +53,7 @@ class Login(QMainWindow):
         
         if password=='':
             msg=Alert()
-            msg.error_message('Pleas enter password')
+            msg.error_message('Please enter password')
             self.password_input.setFocus()
             return
         
@@ -92,8 +92,8 @@ class Register(QMainWindow):
         self.btn_eye1=self.findChild(QPushButton, 'btn_eye1')
         self.btn_eye2=self.findChild(QPushButton, 'btn_eye2')
         
-        self.btn_login.clicked.connect(self.register)
-        self.btn_register.clicked.connect(self.show_login)
+        self.btn_register.clicked.connect(self.register)
+        self.btn_login.clicked.connect(self.show_login)
         self.btn_eye1.clicked.connect(lambda: self.hiddenOrShow(self.password_input, self.btn_eye1))
         self.btn_eye2.clicked.connect(lambda: self.hiddenOrShow(self.confirm_password_input, self.btn_eye2))
         
@@ -140,7 +140,7 @@ class Register(QMainWindow):
             msg=Alert()
             msg.error_message('Email already exists')
         else:
-            database.create_user(email,password)
+            database.create_user(email, name, password)
             msg=Alert()
             msg.success_message('Registration successful')
             self.show_login()
