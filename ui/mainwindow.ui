@@ -398,7 +398,8 @@
        <string notr="true">overflow-wrap: break-word;</string>
       </property>
       <property name="text">
-       <string>Nguyễn Xuân Son được kỳ vọng sẽ tiếp tục có một màn trình diễn bùng nổ ở trận gặp Singapore. Hai sự thay đổi của HLV Kim Sang-sik so với trận đấu trước là Khuất Văn Khang và Đinh Thanh Bình.</string>
+       <string>Nguyễn Xuân Son được kỳ vọng sẽ tiếp tục có một màn trình diễn bùng nổ ở trận gặp Singapore.
+Hai sự thay đổi của HLV Kim Sang-sik so với trận đấu trước là Khuất Văn Khang và Đinh Thanh Bình.</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_41">
@@ -467,7 +468,8 @@ color:rgb(85, 255, 127)</string>
        </rect>
       </property>
       <property name="text">
-       <string>Phút 20, Xuân Son tung người dứt điểm đưa bóng đi dội xà. Nếu bóng đi vào lưới, bàn thắng cũng không được công nhận vì lỗi việt vị.</string>
+       <string>Phút 20, Xuân Son tung người dứt điểm đưa bóng đi dội xà. 
+Nếu bóng đi vào lưới, bàn thắng cũng không được công nhận vì lỗi việt vị.</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_46">
@@ -480,7 +482,8 @@ color:rgb(85, 255, 127)</string>
        </rect>
       </property>
       <property name="text">
-       <string>Trọng tài bắt trận chung kết lượt về AFF Cup 2008, ông Abdul Malik, kể lại kỷ niệm về bàn thắng của tiền đạo Công Vinh trên sân Mỹ Đình từng khiến ông choáng ngợp.</string>
+       <string>Trọng tài bắt trận chung kết lượt về AFF Cup 2008, ông Abdul Malik, kể lại kỷ niệm về
+ bàn thắng của tiền đạo Công Vinh trên sân Mỹ Đình từng khiến ông choáng ngợp.</string>
       </property>
      </widget>
     </widget>
@@ -976,7 +979,7 @@ color:rgb(85, 255, 127)</string>
      <x>0</x>
      <y>0</y>
      <width>1024</width>
-     <height>26</height>
+     <height>37</height>
     </rect>
    </property>
   </widget>
