@@ -1,0 +1,189 @@
+[
+    {
+        "id": 1,
+        "name": "Field 1",
+        "location": "123 Main St, Anytown, USA",
+        "capacity": 5,
+        "price": 1000000,
+        "status": "available",
+        "quality": "cỏ nhân tạo",
+        "description": "Field 1 is a soccer field with a capacity of 5 people. It is located in the center of the city. It is a good place to play soccer."
+    },
+    {
+        "id": 2,
+        "name": "Field 2",
+        "location": "6 Second St, Uptown, USA",
+        "capacity": 5,
+        "price": 1000000,
+        "status": "available",
+        "quality": "cỏ tự nhiên",
+        "description": "Field 2 is a small-sided soccer field with a capacity of 5 players. Conveniently located in the heart of the city, it provides an excellent spot for casual games and quick matches."
+    },
+    {
+        "id": 3,
+        "name": "Field 3",
+        "location": "49 Third St, Downtown, USA",
+        "capacity": 10,
+        "price": 2000000,
+        "status": "booked",
+        "quality": "cỏ nhân tạo",
+        "description": "Field 3 Located in the bustling city center, Field 1 is a spacious 10-player soccer field designed for exciting games. With quality turf and ample room for movement, it's a great spot for teams to compete and have fun."
+    },
+    {
+        "id": 4,
+        "name": "Field 4",
+        "location": "78 Fourth St, Syntown, USA",
+        "capacity": 10,
+        "price": 2000000,
+        "status": "available",
+        "quality": "cỏ tự nhiên",
+        "description": "Field 4 is a top-tier 10-a-side soccer field in a prime city location. Featuring a well-kept playing surface and a vibrant atmosphere, it is ideal for both recreational and league matches."
+    }
+]
+
+[
+    {
+        "field_id": 1,
+        "date": "2025-03-21",
+        "time": "10:00 AM - 11:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 1,
+        "date": "2025-03-21",
+        "time": "12:00 AM - 13:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 1,
+        "date": "2025-03-21",
+        "time": "14:00 AM - 15:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 1,
+        "date": "2025-03-21",
+        "time": "16:00 AM - 17:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 1,
+        "date": "2025-03-21",
+        "time": "18:00 AM - 19:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 1,
+        "date": "2025-03-21",
+        "time": "20:00 AM - 21:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 2,
+        "date": "2025-03-21",
+        "time": "10:00 AM - 11:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 2,
+        "date": "2025-03-21",
+        "time": "12:00 AM - 13:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 2,
+        "date": "2025-03-21",
+        "time": "14:00 AM - 15:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 2,
+        "date": "2025-03-21",
+        "time": "16:00 AM - 17:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 2,
+        "date": "2025-03-21",
+        "time": "18:00 AM - 19:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 2,
+        "date": "2025-03-21",
+        "time": "20:00 AM - 21:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 3,
+        "date": "2025-03-21",
+        "time": "10:00 AM - 11:00 AM",
+        "status": "booked"
+    },
+    {
+        "field_id": 3,
+        "date": "2025-03-21",
+        "time": "12:00 AM - 13:00 AM",
+        "status": "booked"
+    },
+    {
+        "field_id": 3,
+        "date": "2025-03-21",
+        "time": "14:00 AM - 15:00 AM",
+        "status": "booked"
+    },
+    {
+        "field_id": 3,
+        "date": "2025-03-21",
+        "time": "16:00 AM - 17:00 AM",
+        "status": "booked"
+    },
+    {
+        "field_id": 3,
+        "date": "2025-03-21",
+        "time": "18:00 AM - 19:00 AM",
+        "status": "booked"
+    },
+    {
+        "field_id": 3,
+        "date": "2025-03-21",
+        "time": "20:00 AM - 21:00 AM",
+        "status": "booked"
+    },
+    {
+        "field_id": 4,
+        "date": "2025-03-21",
+        "time": "10:00 AM - 11:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 4,
+        "date": "2025-03-21",
+        "time": "12:00 AM - 13:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 4,
+        "date": "2025-03-21",
+        "time": "14:00 AM - 15:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 4,
+        "date": "2025-03-21",
+        "time": "16:00 AM - 17:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 4,
+        "date": "2025-03-21",
+        "time": "18:00 AM - 19:00 AM",
+        "status": "available"
+    },
+    {
+        "field_id": 4,
+        "date": "2025-03-21",
+        "time": "20:00 AM - 21:00 AM",
+        "status": "available"
+    }
+]
