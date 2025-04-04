@@ -24,10 +24,10 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(210, 210, 210)</string>
+     <string notr="true">background-color:rgb(85, 170, 127)</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_14">
@@ -154,7 +154,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:rgb(85, 170, 0)</string>
+       <string notr="true">background-color:rgb(255, 255, 255)</string>
       </property>
       <property name="placeholderText">
        <string>Name</string>
@@ -170,7 +170,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:rgb(85, 170, 0)</string>
+       <string notr="true">background-color:rgb(255, 255, 255)</string>
       </property>
       <property name="placeholderText">
        <string>Email</string>
@@ -186,7 +186,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:rgb(85, 170, 0)</string>
+       <string notr="true">background-color:rgb(255, 255, 255)</string>
       </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -212,7 +212,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:rgb(85, 170, 0)</string>
+       <string notr="true">background-color:rgb(255, 255, 255)</string>
       </property>
      </widget>
      <widget class="QComboBox" name="comboBox">
@@ -225,7 +225,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:rgb(0, 255, 127)</string>
+       <string notr="true">background-color:rgb(255, 255, 255)</string>
       </property>
       <item>
        <property name="text">
@@ -478,7 +478,7 @@ color:rgb(238, 238, 238)</string>
       </property>
       <property name="styleSheet">
        <string notr="true">font: 700 24pt &quot;Segoe UI&quot;;
-color:rgb(85, 170, 0)</string>
+color:rgb(255, 255, 255)</string>
       </property>
       <property name="text">
        <string>Tin tức</string>
@@ -550,7 +550,7 @@ font: 14pt &quot;Segoe UI&quot;;
       </property>
       <property name="styleSheet">
        <string notr="true">font: 700 25pt &quot;Segoe UI&quot;;
-color:rgb(85, 170, 0)</string>
+color:rgb(255, 255, 255)</string>
       </property>
       <property name="text">
        <string>Lịch đặt sân</string>
@@ -1397,7 +1397,7 @@ font: 14pt &quot;Segoe UI&quot;;
       <property name="geometry">
        <rect>
         <x>120</x>
-        <y>100</y>
+        <y>90</y>
         <width>260</width>
         <height>160</height>
        </rect>
@@ -1415,7 +1415,7 @@ font: 14pt &quot;Segoe UI&quot;;
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>200</x>
         <y>270</y>
         <width>101</width>
         <height>20</height>
@@ -1428,8 +1428,8 @@ font: 14pt &quot;Segoe UI&quot;;
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>190</x>
-        <y>300</y>
+        <x>200</x>
+        <y>290</y>
         <width>93</width>
         <height>29</height>
        </rect>
@@ -1441,8 +1441,8 @@ font: 14pt &quot;Segoe UI&quot;;
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>520</x>
-        <y>100</y>
+        <x>510</x>
+        <y>90</y>
         <width>260</width>
         <height>160</height>
        </rect>
@@ -1499,7 +1499,7 @@ font: 14pt &quot;Segoe UI&quot;;
       <property name="geometry">
        <rect>
         <x>600</x>
-        <y>300</y>
+        <y>290</y>
         <width>93</width>
         <height>29</height>
        </rect>
@@ -1584,7 +1584,7 @@ font: 14pt &quot;Segoe UI&quot;;
       </property>
       <property name="styleSheet">
        <string notr="true">font: 700 24pt &quot;Segoe UI&quot;;
-color:rgb(85, 170, 0)
+color:rgb(255, 255, 255)
 </string>
       </property>
       <property name="text">
@@ -1597,7 +1597,7 @@ color:rgb(85, 170, 0)
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>110</y>
+      <y>130</y>
       <width>81</width>
       <height>61</height>
      </rect>
@@ -1614,7 +1614,7 @@ color:rgb(85, 170, 0)
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>550</y>
+      <y>470</y>
       <width>81</width>
       <height>61</height>
      </rect>
@@ -1631,7 +1631,7 @@ color:rgb(85, 170, 0)
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>340</y>
+      <y>300</y>
       <width>81</width>
       <height>61</height>
      </rect>
