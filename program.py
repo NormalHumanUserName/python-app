@@ -170,7 +170,7 @@ class Home(QMainWindow):
 
     def navigateScreen(self, page:int):
         self.stackedWidget.setCurrentIndex(page)
-
+    
             
 if __name__=='__main__':
     app=QApplication(sys.argv)

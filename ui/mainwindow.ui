@@ -27,28 +27,9 @@
      <string notr="true">background-color:rgb(85, 170, 127)</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
-     <widget class="QLabel" name="label_14">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>80</y>
-        <width>101</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/user-solid.svg</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
@@ -242,6 +223,19 @@ li.checked::marker { content: &quot;\2612&quot;; }
         <string>None</string>
        </property>
       </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>110</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="page_3">
