@@ -415,7 +415,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </property>
       <property name="styleSheet">
        <string notr="true">overflow-wrap: break-word;
-color:rgb(238, 238, 238)</string>
+color:rgb(255, 255, 255)</string>
       </property>
       <property name="text">
        <string>HLV Chu Đình Nghiêm đã cho thấy tài cầm quân khi giúp CLB Hải Phòng
