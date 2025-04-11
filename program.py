@@ -1,5 +1,5 @@
-from PyQt6.QtWidgets import QMainWindow, QApplication, QLineEdit, QMessageBox, QPushButton, QStackedWidget
-from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import *
+from PyQt6.QtGui import *
 from PyQt6 import uic
 import sys
 import database
@@ -156,25 +156,42 @@ class Home(QMainWindow):
         super().__init__()
         uic.loadUi('ui/mainwindow.ui', self)
         self.user_id = user_id
+        self.user=database.find_user_by_id(user_id)
         
         self.nav_home_btn = self.findChild(QPushButton,'nav_home_btn')
         self.nav_account_btn = self.findChild(QPushButton,'nav_account_btn')
         self.nav_new_btn = self.findChild(QPushButton,'nav_new_btn')
         self.stackedWidget = self.findChild(QStackedWidget,'stackedWidget')
         self.stackedWidget.setCurrentIndex(2)
-        
+        self.btn_avatar = self.findChild(QPushButton, "btn_avatar")
         
         self.nav_home_btn.clicked.connect(lambda: self.navigateScreen(2))
         self.nav_account_btn.clicked.connect(lambda: self.navigateScreen(0))
         self.nav_new_btn.clicked.connect(lambda: self.navigateScreen(1))
+        self.btn_avatar.clicked.connect(self.update_avatar)
 
     def navigateScreen(self, page:int):
         self.stackedWidget.setCurrentIndex(page)
-    
+        
+    def load_user_info(self):
+        self.lb_name=self.findChild(QLabel, 'lb_name')
+        self.lb_email=self.findChild(QLabel, 'lb_email')
+        self.lb_name.setText(self.user["name"])
+        self.lb_email.setText(self.user["email"])
+        self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
+
+    def update_avatar(self):
+        file, _ = QFileDialog.getOpenFileName(self, "Select Image", "", "Image Files (*.png *.jpg *jpeg *.bmp)")
+        if file:
+            self.user["avatar"] = file
+            self.btn_avatar.setIcon(QIcon(file))
+            database.update_user_avatar(self.user_id, file)
             
 if __name__=='__main__':
     app=QApplication(sys.argv)
     login=Login()
+    login.show()
+    login=Home(1)
     login.show()
     sys.exit(app.exec())
 

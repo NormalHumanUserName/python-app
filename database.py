@@ -38,6 +38,15 @@ def update_user_avatar(user_id, avatar):
     cursor.execute('UPDATE user SET avatar=? WHERE id=?',(avatar,user_id))
     conn.commit()
     conn.close()
+
+def find_user_by_id(user_id):
+    conn=sqlite3.connect('./data/database.db')
+    cursor=conn.cursor()
+    cursor.row_factory = dict_factory
+    cursor.execute('SELECT id, email, name, password, avatar FROM user WHERE id=?',(user_id,))
+    user=cursor.fetchone()
+    conn.close()
+    return user
     
 #create_user('latrikhiemvn@gmail.com', 'La Trí Khiêm', "334939320")
 print(find_user_by_email('latrikhiemvn@gmail.com'))
