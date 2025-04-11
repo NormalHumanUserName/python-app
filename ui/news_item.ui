@@ -65,7 +65,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">overflow-wrap: break-word;
-color:rgb(0, 0, 0)</string>
+color:rgb(0, 0, 127)</string>
    </property>
    <property name="text">
     <string>HLV Chu Đình Nghiêm đã cho thấy tài cầm quân khi giúp CLB Hải Phòng
