@@ -74,6 +74,9 @@ QPushButton {
      <property name="styleSheet">
       <string notr="true">background-color: #f5f5f5;</string>
      </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
     </widget>
    </item>
    <item>
@@ -119,4 +122,4 @@ QPushButton {
  </widget>
  <resources/>
  <connections/>
-</ui> 
+</ui>
