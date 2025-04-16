@@ -1,5 +1,6 @@
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
+from PyQt6.QtCore import *
 from PyQt6 import uic
 import sys
 import database
@@ -92,6 +93,9 @@ class Register(QMainWindow):
         self.btn_eye1=self.findChild(QPushButton, 'btn_eye1')
         self.btn_eye2=self.findChild(QPushButton, 'btn_eye2')
         
+        self.d_birthday=self.findChild(QDateEdit, 'd_birthday')
+        self.cb_gender=self.findChild(QComboBox, 'cb_gender')
+        
         self.btn_register.clicked.connect(self.register)
         self.btn_login.clicked.connect(self.show_login)
         self.btn_eye1.clicked.connect(lambda: self.hiddenOrShow(self.password_input, self.btn_eye1))
@@ -164,29 +168,48 @@ class Home(QMainWindow):
         self.stackedWidget = self.findChild(QStackedWidget,'stackedWidget')
         self.stackedWidget.setCurrentIndex(2)
         self.btn_avatar = self.findChild(QPushButton, "btn_avatar")
-        
+        self.btn_update_info = self.findChild(QPushButton, "btn_update_info")
+
         self.nav_home_btn.clicked.connect(lambda: self.navigateScreen(2))
         self.nav_account_btn.clicked.connect(lambda: self.navigateScreen(0))
         self.nav_new_btn.clicked.connect(lambda: self.navigateScreen(1))
         self.btn_avatar.clicked.connect(self.update_avatar)
+        self.btn_update_info.clicked.connect(self.update_info)
+        
+        self.load_user_info()
 
     def navigateScreen(self, page:int):
         self.stackedWidget.setCurrentIndex(page)
         
     def load_user_info(self):
-        self.lb_name=self.findChild(QLabel, 'lb_name')
-        self.lb_email=self.findChild(QLabel, 'lb_email')
-        self.lb_name.setText(self.user["name"])
-        self.lb_email.setText(self.user["email"])
+        self.txt_name=self.findChild(QLineEdit, 'txt_name')
+        self.txt_email=self.findChild(QLineEdit, 'txt_email')
+        self.btn_avatar=self.findChild(QPushButton, 'btn_avatar')
+        self.d_birthday=self.findChild(QDateEdit, 'd_birthday')
+        self.cb_gender=self.findChild(QComboBox, 'cb_gender')
+        
+        self.txt_name.setText(self.user["name"])
+        self.txt_email.setText(self.user["email"])
         self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
-
+        self.d_birthday.setDate(QDate.fromString(self.user["birthday"], "dd/MM/yyyy"))
+        self.cb_gender.setCurrentText(self.user["gender"])
+        
     def update_avatar(self):
         file, _ = QFileDialog.getOpenFileName(self, "Select Image", "", "Image Files (*.png *.jpg *jpeg *.bmp)")
         if file:
             self.user["avatar"] = file
             self.btn_avatar.setIcon(QIcon(file))
             database.update_user_avatar(self.user_id, file)
-            
+
+    def update_info(self):
+        name = self.txt_name.text()
+        birthday = self.d_birthday.date().toString("dd/MM/yyyy")
+        gender = self.cb_gender.currentText()
+        database.update_user(self.user_id, name, birthday, gender)
+        msg = Alert()
+        msg.success_message("Update info success")
+        self.load_user_info() 
+
 if __name__=='__main__':
     app=QApplication(sys.argv)
     login=Login()
