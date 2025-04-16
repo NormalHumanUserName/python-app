@@ -271,7 +271,7 @@ class Home(QMainWindow):
 
     def view_field(self, field):
         # Navigate to page 5
-        self.stackedWidget.setCurrentIndex(4)
+        self.stackedWidget.setCurrentIndex(3)
         
         # Get the detail widget from page 5
         detail_widget = self.page_5.findChild(QWidget, "detail_widget")
@@ -312,7 +312,6 @@ class Home(QMainWindow):
         
         for i, (label, value) in enumerate(details):
             label_widget = QLabel(label)
-            label_widget.setStyleSheet("font-weight: bold; color: #FFFFFF;")
             value_widget = QLabel(value)
             details_layout.addWidget(label_widget, i, 0)
             details_layout.addWidget(value_widget, i, 1)
