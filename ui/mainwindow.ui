@@ -27,7 +27,7 @@
      <string notr="true">background-color:rgb(85, 170, 127)</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_15">
@@ -716,7 +716,285 @@ color:rgb(255, 255, 255)
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="page_5"/>
+    <widget class="QWidget" name="page_5">
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QWidget" name="detail_widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">QWidget#detail_widget {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+QLabel {
+    color: white;
+}
+QPushButton {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #357a38;
+}
+QDateEdit {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+}</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QLabel" name="field_image">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0.1);
+color: white;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="field_name">
+           <property name="font">
+            <font>
+             <pointsize>24</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+padding: 10px 0;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="details_widget" native="true">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: white;
+    padding: 4px;
+    font-size: 16px;
+}
+QLabel[labelType=&quot;title&quot;] {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+    font-size: 16px;
+}
+QLabel[labelType=&quot;value&quot;] {
+    color: white;
+    font-size: 16px;
+    padding-left: 8px;
+}</string>
+           </property>
+           <layout class="QGridLayout" name="details_layout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="location_label">
+              <property name="text">
+               <string>Location:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="labelType" stdset="0">
+               <string>title</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="capacity_label">
+              <property name="text">
+               <string>Capacity:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="labelType" stdset="0">
+               <string>title</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="price_label">
+              <property name="text">
+               <string>Price:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="labelType" stdset="0">
+               <string>title</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="quality_label">
+              <property name="text">
+               <string>Quality:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="labelType" stdset="0">
+               <string>title</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="description_label">
+              <property name="text">
+               <string>Description:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="labelType" stdset="0">
+               <string>title</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="location_value">
+              <property name="labelType" stdset="0">
+               <string>value</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="capacity_value">
+              <property name="labelType" stdset="0">
+               <string>value</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="price_value">
+              <property name="labelType" stdset="0">
+               <string>value</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="quality_value">
+              <property name="labelType" stdset="0">
+               <string>value</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="description_value">
+              <property name="labelType" stdset="0">
+               <string>value</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="schedule_widget" native="true">
+           <property name="styleSheet">
+            <string notr="true">QWidget#schedule_widget {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+QLabel {
+    color: #333333;
+}
+QDateEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 4px;
+}</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QWidget" name="date_widget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLabel" name="date_label">
+                 <property name="text">
+                  <string>Select Date:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDateEdit" name="date_picker">
+                 <property name="calendarPopup">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="schedule_scroll">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="schedule_content">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>778</width>
+                 <height>200</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="schedule_layout"/>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="back_button">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #357a38;
+}</string>
+           </property>
+           <property name="text">
+            <string>Back to Fields</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
    <widget class="QPushButton" name="nav_home_btn">
     <property name="geometry">

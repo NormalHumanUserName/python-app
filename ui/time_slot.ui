@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TimeSlot</class>
+ <widget class="QWidget" name="TimeSlot">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>60</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>60</height>
+   </size>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#TimeSlot {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+QLabel {
+    color: #333333;
+}
+
+QPushButton {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+QPushButton#book_button {
+    background-color: #4CAF50;
+}
+
+QPushButton#book_button:hover {
+    background-color: #45a049;
+}
+
+QPushButton#book_button:disabled {
+    background-color: #cccccc;
+}
+
+QPushButton#booked_button {
+    background-color: #f44336;
+}
+
+QPushButton#booked_button:hover {
+    background-color: #da190b;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QLabel" name="time_label">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>00:00</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="status_label">
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Available</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="book_button">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Book</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui> 

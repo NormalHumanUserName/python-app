@@ -224,6 +224,167 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.page_4)
         self.page_5 = QtWidgets.QWidget()
         self.page_5.setObjectName("page_5")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.page_5)
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.detail_widget = QtWidgets.QWidget(parent=self.page_5)
+        self.detail_widget.setStyleSheet("QWidget#detail_widget {\n"
+"    background-color: #4CAF50;\n"
+"    color: white;\n"
+"    padding: 20px;\n"
+"}\n"
+"QLabel {\n"
+"    color: white;\n"
+"}\n"
+"QPushButton {\n"
+"    background-color: #45a049;\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 4px;\n"
+"    padding: 8px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #357a38;\n"
+"}\n"
+"QDateEdit {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border: none;\n"
+"    border-radius: 4px;\n"
+"    padding: 4px;\n"
+"}")
+        self.detail_widget.setObjectName("detail_widget")
+        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.detail_widget)
+        self.verticalLayout_6.setObjectName("verticalLayout_6")
+        self.field_image = QtWidgets.QLabel(parent=self.detail_widget)
+        self.field_image.setMinimumSize(QtCore.QSize(0, 300))
+        self.field_image.setStyleSheet("background-color: rgba(255, 255, 255, 0.1);\n"
+"color: white;")
+        self.field_image.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.field_image.setObjectName("field_image")
+        self.verticalLayout_6.addWidget(self.field_image)
+        self.field_name = QtWidgets.QLabel(parent=self.detail_widget)
+        font = QtGui.QFont()
+        font.setPointSize(24)
+        font.setBold(True)
+        self.field_name.setFont(font)
+        self.field_name.setStyleSheet("color: white;\n"
+"padding: 10px 0;")
+        self.field_name.setObjectName("field_name")
+        self.verticalLayout_6.addWidget(self.field_name)
+        self.details_widget = QtWidgets.QWidget(parent=self.detail_widget)
+        self.details_widget.setStyleSheet("QLabel {\n"
+"    color: white;\n"
+"    padding: 4px;\n"
+"    font-size: 16px;\n"
+"}\n"
+"QLabel[labelType=\"title\"] {\n"
+"    color: rgba(255, 255, 255, 0.9);\n"
+"    font-weight: bold;\n"
+"    font-size: 16px;\n"
+"}\n"
+"QLabel[labelType=\"value\"] {\n"
+"    color: white;\n"
+"    font-size: 16px;\n"
+"    padding-left: 8px;\n"
+"}")
+        self.details_widget.setObjectName("details_widget")
+        self.details_layout = QtWidgets.QGridLayout(self.details_widget)
+        self.details_layout.setObjectName("details_layout")
+        self.location_label = QtWidgets.QLabel(parent=self.details_widget)
+        self.location_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.location_label.setObjectName("location_label")
+        self.details_layout.addWidget(self.location_label, 0, 0, 1, 1)
+        self.capacity_label = QtWidgets.QLabel(parent=self.details_widget)
+        self.capacity_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.capacity_label.setObjectName("capacity_label")
+        self.details_layout.addWidget(self.capacity_label, 1, 0, 1, 1)
+        self.price_label = QtWidgets.QLabel(parent=self.details_widget)
+        self.price_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.price_label.setObjectName("price_label")
+        self.details_layout.addWidget(self.price_label, 2, 0, 1, 1)
+        self.quality_label = QtWidgets.QLabel(parent=self.details_widget)
+        self.quality_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.quality_label.setObjectName("quality_label")
+        self.details_layout.addWidget(self.quality_label, 3, 0, 1, 1)
+        self.description_label = QtWidgets.QLabel(parent=self.details_widget)
+        self.description_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.description_label.setObjectName("description_label")
+        self.details_layout.addWidget(self.description_label, 4, 0, 1, 1)
+        self.location_value = QtWidgets.QLabel(parent=self.details_widget)
+        self.location_value.setObjectName("location_value")
+        self.details_layout.addWidget(self.location_value, 0, 1, 1, 1)
+        self.capacity_value = QtWidgets.QLabel(parent=self.details_widget)
+        self.capacity_value.setObjectName("capacity_value")
+        self.details_layout.addWidget(self.capacity_value, 1, 1, 1, 1)
+        self.price_value = QtWidgets.QLabel(parent=self.details_widget)
+        self.price_value.setObjectName("price_value")
+        self.details_layout.addWidget(self.price_value, 2, 1, 1, 1)
+        self.quality_value = QtWidgets.QLabel(parent=self.details_widget)
+        self.quality_value.setObjectName("quality_value")
+        self.details_layout.addWidget(self.quality_value, 3, 1, 1, 1)
+        self.description_value = QtWidgets.QLabel(parent=self.details_widget)
+        self.description_value.setObjectName("description_value")
+        self.details_layout.addWidget(self.description_value, 4, 1, 1, 1)
+        self.verticalLayout_6.addWidget(self.details_widget)
+        self.schedule_widget = QtWidgets.QWidget(parent=self.detail_widget)
+        self.schedule_widget.setStyleSheet("QWidget#schedule_widget {\n"
+"    background-color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 10px;\n"
+"}\n"
+"QLabel {\n"
+"    color: #333333;\n"
+"}\n"
+"QDateEdit {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border: 1px solid #cccccc;\n"
+"    border-radius: 4px;\n"
+"    padding: 4px;\n"
+"}")
+        self.schedule_widget.setObjectName("schedule_widget")
+        self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.schedule_widget)
+        self.verticalLayout_7.setObjectName("verticalLayout_7")
+        self.date_widget = QtWidgets.QWidget(parent=self.schedule_widget)
+        self.date_widget.setObjectName("date_widget")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.date_widget)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.date_label = QtWidgets.QLabel(parent=self.date_widget)
+        self.date_label.setObjectName("date_label")
+        self.horizontalLayout_2.addWidget(self.date_label)
+        self.date_picker = QtWidgets.QDateEdit(parent=self.date_widget)
+        self.date_picker.setCalendarPopup(True)
+        self.date_picker.setObjectName("date_picker")
+        self.horizontalLayout_2.addWidget(self.date_picker)
+        self.verticalLayout_7.addWidget(self.date_widget)
+        self.schedule_scroll = QtWidgets.QScrollArea(parent=self.schedule_widget)
+        self.schedule_scroll.setWidgetResizable(True)
+        self.schedule_scroll.setObjectName("schedule_scroll")
+        self.schedule_content = QtWidgets.QWidget()
+        self.schedule_content.setGeometry(QtCore.QRect(0, 0, 778, 200))
+        self.schedule_content.setObjectName("schedule_content")
+        self.schedule_layout = QtWidgets.QVBoxLayout(self.schedule_content)
+        self.schedule_layout.setObjectName("schedule_layout")
+        self.schedule_scroll.setWidget(self.schedule_content)
+        self.verticalLayout_7.addWidget(self.schedule_scroll)
+        self.verticalLayout_6.addWidget(self.schedule_widget)
+        self.back_button = QtWidgets.QPushButton(parent=self.detail_widget)
+        self.back_button.setMinimumSize(QtCore.QSize(0, 40))
+        self.back_button.setStyleSheet("QPushButton {\n"
+"    background-color: #45a049;\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 4px;\n"
+"    padding: 10px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #357a38;\n"
+"}")
+        self.back_button.setObjectName("back_button")
+        self.verticalLayout_6.addWidget(self.back_button)
+        self.verticalLayout_5.addWidget(self.detail_widget)
         self.stackedWidget.addWidget(self.page_5)
         self.nav_home_btn = QtWidgets.QPushButton(parent=self.centralwidget)
         self.nav_home_btn.setGeometry(QtCore.QRect(20, 130, 81, 61))
@@ -256,7 +417,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(4)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -294,3 +455,20 @@ class Ui_MainWindow(object):
         self.label_24.setText(_translate("MainWindow", "Name: Field 3"))
         self.label_25.setText(_translate("MainWindow", "Name: Field 4"))
         self.label_28.setText(_translate("MainWindow", "Sân bóng"))
+        self.location_label.setText(_translate("MainWindow", "Location:"))
+        self.location_label.setProperty("labelType", _translate("MainWindow", "title"))
+        self.capacity_label.setText(_translate("MainWindow", "Capacity:"))
+        self.capacity_label.setProperty("labelType", _translate("MainWindow", "title"))
+        self.price_label.setText(_translate("MainWindow", "Price:"))
+        self.price_label.setProperty("labelType", _translate("MainWindow", "title"))
+        self.quality_label.setText(_translate("MainWindow", "Quality:"))
+        self.quality_label.setProperty("labelType", _translate("MainWindow", "title"))
+        self.description_label.setText(_translate("MainWindow", "Description:"))
+        self.description_label.setProperty("labelType", _translate("MainWindow", "title"))
+        self.location_value.setProperty("labelType", _translate("MainWindow", "value"))
+        self.capacity_value.setProperty("labelType", _translate("MainWindow", "value"))
+        self.price_value.setProperty("labelType", _translate("MainWindow", "value"))
+        self.quality_value.setProperty("labelType", _translate("MainWindow", "value"))
+        self.description_value.setProperty("labelType", _translate("MainWindow", "value"))
+        self.date_label.setText(_translate("MainWindow", "Select Date:"))
+        self.back_button.setText(_translate("MainWindow", "Back to Fields"))
