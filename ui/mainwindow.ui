@@ -27,7 +27,7 @@
      <string notr="true">background-color:rgb(85, 170, 127)</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_15">
@@ -158,8 +158,11 @@ color: rgb(0, 0, 0)</string>
         <height>121</height>
        </rect>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="btn_update_info">
@@ -753,8 +756,8 @@ QDateEdit {
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>837</width>
-                 <height>69</height>
+                 <width>843</width>
+                 <height>83</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="schedule_layout"/>
@@ -854,7 +857,7 @@ QPushButton:hover {
      <x>0</x>
      <y>0</y>
      <width>1024</width>
-     <height>24</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
